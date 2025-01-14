@@ -21,10 +21,42 @@ html {
 body {
   height: 100vh;
   width: 100%;
-  background: #000;
   overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  place-content: center;
-}
+  background: radial-gradient(
+      transparent 0,
+      transparent 2em,
+      lightblue 2em,
+      lightblue 2.5em,
+      transparent 2.5em,
+      transparent 100%
+    ),
+    radial-gradient(
+      transparent 0,
+      transparent 2em,
+      aquamarine 2em,
+      aquamarine 2.5em,
+      transparent 2.5em,
+      transparent 100%
+    ),
+    radial-gradient(
+      transparent 0,
+      transparent 2em,
+      khaki 2em,
+      khaki 2.5em,
+      transparent 2.5em,
+      transparent 100%
+    ),
+    radial-gradient(
+      transparent 0,
+      transparent 2em,
+      pink 2em,
+      pink 2.5em,
+      transparent 2.5em,
+      transparent 100%
+    ),
+    linen;
 
+  background-blend-mode: multiply;
+  background-size: 5em 5em;
+  background-position: 0 2.5em, 2.5em 0, 2.5em 2.5em, 0 0;
+}
